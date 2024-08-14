@@ -6,6 +6,9 @@ on:
     branches: [ main ]
 jobs:
   build:
+    defaults:
+      run:
+        working-directory: src
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
